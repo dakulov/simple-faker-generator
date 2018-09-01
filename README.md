@@ -2,6 +2,11 @@ Simple Faker Generator
 --
 CLI for [faker.js](https://github.com/marak/Faker.js) (uses yaml files as format description)
 
+# Installation
+```
+npm install -g simple-faker-generator
+```
+
 # Format example
 ```
 id: random.number
