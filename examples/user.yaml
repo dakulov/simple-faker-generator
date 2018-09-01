@@ -1,0 +1,24 @@
+id: random.number
+login: internet.userName
+password: internet.password
+firstName: name.firstName
+lastName: name.lastName
+roles:
+  - id: random.number
+    name:
+      method: random.arrayElement
+      args:
+        - [admin, guest, user]
+age:
+  method: random.number
+  args:
+    - min: 18
+      max: 90
+createdAt: date.past
+number:
+  method: helpers.replaceSymbolWithNumber
+  args: ['###-####']
+secretWords:
+  method: helpers.shuffle
+  args:
+    - [apple, bat, cat]
